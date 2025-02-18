@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgba(224, 180, 36, 0.733);
+            border-color: grey;
+            border-width: 1px;
+        }
+        #timer {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imposta il tempo (secondi)</h1>
+    <input type="number" id="secondsInput" placeholder="Secondi" min="1">
+    <button onclick="startCountdown()">Avvia Countdown</button>
+    <button id="pause" onclick="pause()">Pausa</button>
+    <button id="reset" onclick="reset()">Resetta</button>
+    <div id="timer"></div>
+
+
+<script src="Selfwork Chiamate.js"></script>
+</body>
+</html>
